@@ -1,0 +1,160 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #d0e6f6, #ffffff);
+    color: #333;
+}
+
+#header-principal {
+    background: linear-gradient(135deg, #4CAF50, #2e7d32);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.titulo-principal {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitulo {
+    font-weight: lighter;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.seccion {
+    background: #ffffffcc; 
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.seccion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.titulo-seccion {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+.foto-personal {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 5px solid #4CAF50;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto-personal:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.lista-redes li, .lista-hobbies li, .lista-tareas li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.lista-redes a {
+    text-decoration: none;
+    color: #064394;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.lista-redes a:hover {
+    color: #0b47a1;
+    text-decoration: underline;
+}
+
+.tabla-horario {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.tabla-horario th, .tabla-horario td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla-horario th {
+    background: linear-gradient(to right, #4CAF50, #2e7d32);
+    color: white;
+}
+
+.formulario-contacto input, 
+.formulario-contacto button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.formulario-contacto input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76,175,80,0.5);
+}
+
+.formulario-contacto button {
+    background: linear-gradient(to right, #4CAF50, #2e7d32);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.formulario-contacto button:hover {
+    background: linear-gradient(to right, #2e7d32, #1b5e20);
+    transform: scale(1.05);
+}
+
+h2, h1 {
+    font-family: 'Verdana', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .seccion {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .titulo-principal {
+        font-size: 2.2rem;
+    }
+
+    .subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .titulo-seccion {
+        font-size: 1.5rem;
+    }
+}
